@@ -15,7 +15,20 @@ namespace LineCompare
             double y2 = Convert.ToInt32(Console.ReadLine());
             double var = Math.Pow((x2 - x1), 2)+Math.Pow((y2-y1),2);
             double length = Math.Sqrt(var);
-            Console.WriteLine("Length of a line is: "+Math.Round(length,2));
+            Console.WriteLine("Length of a line1 is: "+Math.Round(length,2));
+            Console.WriteLine("Enter the values of x3 and y3");
+            double x3 = Convert.ToInt32(Console.ReadLine());
+            double y3 = Convert.ToInt32(Console.ReadLine());
+            double var1 = Math.Pow((x3 - x1), 2) + Math.Pow((y3 - y1), 2);
+            double length2 = Math.Sqrt(var1);
+            if (length == length2)
+            {
+                Console.WriteLine("Two lines are equal");
+            }
+            else
+            {
+                Console.WriteLine("Two lines aren't equal");
+            }
         }
     }
 }
